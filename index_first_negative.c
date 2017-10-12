@@ -1,12 +1,11 @@
-#include <stdio.h>
 
-
-int index_first_negative(int arr[20])
+int index_first_negative(int a[20], int size)
 {
-	unsigned i;
-	for(i = 0; i < (int)sizeof(arr)/(int)sizeof(arr[0]); ++i)
+	int i;
+
+	for(i = 0; i < size; ++i)
 	{
-		if(arr[i] < 0)
-			return arr[i];
+		if(a[i] < 0)
+			return a[i];
 	}
 }
